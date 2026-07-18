@@ -1,11 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <header class="main-header">
+        <nav class="navbar" aria-label="Navigation principale">
+            <a href="index.html" class="navbar-brand">AfriConnect Summit</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="programme.html" class="nav-link active">Programmes</a></li>
+                <li><a href="intervenants.html" class="nav-link">Intervenants</a></li>
+                <li><a href="contact.html" class="nav-link">Inscription & Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Changer de thème"><i class="bi bi-moon-fill"></i></button>
+                <button id="hamburger-menu" aria-label="Ouvrir le menu mobile" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="internal-hero">
+            <div class="internal-hero-container">
+                <h1>Programme des Sessions</h1>
+                <!-- Fil d'Ariane -->
+                <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                    <ol>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li aria-current="page">Programme</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!-- Onglets et Planning -->
+        <section class="schedule-section">
+            <div class="schedule-container">
+                <!-- Barre d'onglets -->
+                <div class="tab-container">
+                    <button class="tab-btn active" data-day="day1">Jour 1 — 29 Octobre</button>
+                    <button class="tab-btn" data-day="day2">Jour 2 — 30 Octobre</button>
+                    <button class="tab-btn" data-day="day3">Jour 3 — 31 Octobre</button>
+                </div>
+                <!-- Contenu des Plannings -->
+                <div class="tab-content-wrapper">
+                    <div id="day1" class="tab-pane active">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Heure</th>
+                                    <th scope="col">Session</th>
+                                    <th scope="col">Intervenant</th>
+                                    <th scope="col">Salle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>08h30 - 09h30</td>
+                                    <td class="session-title">Accueil des participants & Enregistrement</td>
+                                    <td>—</td>
+                                    <td>Hall Principal</td>
+                                </tr>
+                                <tr>
+                                    <td>09h30 - 11h00</td>
+                                    <td class="session-title">Keynote d'ouverture : L'Afrique numérique en 2026</td>
+                                    <td>Amadi Diop</td>
+                                    <td>Amphi Panafricain</td>
+                                </tr>
+                                <tr>
+                                    <td>11h15 - 12h45</td>
+                                    <td class="session-title">Table ronde : Souveraineté des données et Cloud sur le
+                                        continent</td>
+                                    <td>Kwamé Mensah</td>
+                                    <td>Salle Innovation</td>
+                                </tr>
+                                <tr>
+                                    <td>14h00 - 15h30</td>
+                                    <td class="session-title">Atelier : Sécuriser les applications web natives</td>
+                                    <td>Équipe CyberShield</td>
+                                    <td>Lab Tech 1</td>
+                                </tr>
+                                <tr>
+                                    <td>15h45 - 17h15</td>
+                                    <td class="session-title">Conférence : Le Web3 au service de l'inclusion
+                                        financière</td>
+                                    <td>Fatou Thiam</td>
+                                    <td>Amphi Panafricain</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="day2" class="tab-pane">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Heure</th>
+                                    <th scope="col">Session</th>
+                                    <th scope="col">Intervenant</th>
+                                    <th scope="col">Salle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>08h30 - 09h30</td>
+                                    <td class="session-title">Accueil des participants & Enregistrement</td>
+                                    <td>—</td>
+                                    <td>Hall Principal</td>
+                                </tr>
+                                <tr>
+                                    <td>09h30 - 11h00</td>
+                                    <td class="session-title">Keynote d'ouverture : L'Afrique numérique en 2026</td>
+                                    <td>Oumar Diaw</td>
+                                    <td>Amphi Panafricain</td>
+                                </tr>
+                                <tr>
+                                    <td>11h15 - 12h45</td>
+                                    <td class="session-title">Table ronde : Souveraineté des données et Cloud sur le
+                                        continent</td>
+                                    <td>Fatou Thiam</td>
+                                    <td>Salle Innovation</td>
+                                </tr>
+                                <tr>
+                                    <td>14h00 - 15h30</td>
+                                    <td class="session-title">Atelier : Sécuriser les applications web natives</td>
+                                    <td>Équipe CyberShield</td>
+                                    <td>Lab Tech 1</td>
+                                </tr>
+                                <tr>
+                                    <td>15h45 - 17h15</td>
+                                    <td class="session-title">Conférence : Le Web3 au service de l'inclusion
+                                        financière</td>
+                                    <td>Kwamé Mensah</td>
+                                    <td>Amphi Panafricain</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="day3" class="tab-pane">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Heure</th>
+                                    <th scope="col">Session</th>
+                                    <th scope="col">Intervenant</th>
+                                    <th scope="col">Salle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>08h30 - 09h30</td>
+                                    <td class="session-title">Accueil des participants & Enregistrement</td>
+                                    <td>—</td>
+                                    <td>Hall Principal</td>
+                                </tr>
+                                <tr>
+                                    <td>09h30 - 11h00</td>
+                                    <td class="session-title">Keynote d'ouverture : L'Afrique numérique en 2026</td>
+                                    <td>Oumar Diaw</td>
+                                    <td>Amphi Panafricain</td>
+                                </tr>
+                                <tr>
+                                    <td>11h15 - 12h45</td>
+                                    <td class="session-title">Table ronde : Souveraineté des données et Cloud sur le
+                                        continent</td>
+                                    <td>Fatou Thiam</td>
+                                    <td>Salle Innovation</td>
+                                </tr>
+                                <tr>
+                                    <td>14h00 - 15h30</td>
+                                    <td class="session-title">Atelier : Sécuriser les applications web natives</td>
+                                    <td>Équipe CyberShield</td>
+                                    <td>Lab Tech 1</td>
+                                </tr>
+                                <tr>
+                                    <td>15h45 - 17h15</td>
+                                    <td class="session-title">Conférence : Le Web3 au service de l'inclusion
+                                        financière</td>
+                                    <td>Kwamé Mensah</td>
+                                    <td>Amphi Panafricain</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Thématique -->
+        <section class="themes-section">
+            <div class="themes-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Piliers</span>
+                    <h2>Les Grandes Thématiques</h2>
+                </div>
+                <div class="themes-grid">
+                    <div class="theme-card fade-in-scroll">
+                        <i class="bi bi-cpu-fill"></i>
+                        <h3>Intelligence Artificielle & Tech</h3>
+                        <p>Modèles LLM souverains, automatisation et cas d'usage industriels pour l'Afrique.</p>
+                    </div>
+                    <div class="theme-card fade-in-scroll">
+                        <i class="bi bi-shield-lock-fill"></i>
+                        <h3>Cybersécurité & Data</h3>
+                        <p>Protection des infrastructures critiques et gouvernance des données africaines.</p>
+                    </div>
+                    <div class="theme-card fade-in-scroll">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <h3>Business & FinTech</h3>
+                        <p>Financement des start-ups, monnaies numériques et croissance de l'écosystème.</p>
+                    </div>
+                    <div class="theme-card fade-in-scroll">
+                        <i class="bi bi-palette-fill"></i>
+                        <h3>Design & Produit</h3>
+                        <p>Expérience utilisateur (UX/UI) inclusive et méthodologies de conception locale.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column branding">
+                <span class="footer-logo">AfriConnect Summit</span>
+                <p class="footer-desc">
+                    Le rendez-vous incontournable des innovateurs, développeurs et investisseurs pour façonner l'avenir
+                    technologique de l'Afrique.
+                </p>
+                <div class="social-links">
+                    <a href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Suivre AfriConnect sur X (Twitter)">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener"
+                        aria-label="Suivre AfriConnect sur LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener"
+                        aria-label="Voir le dépôt GitHub de l'événement">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column links">
+                <h3>Navigation</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Programme complet</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">S'inscrire au sommet</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-info">
+                <h3>Infos Pratiques</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        <span>Dakar Arena, Dakar, Sénégal</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                        <a href="mailto:contact@africonnect.com">contact@africonnect.com</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                        <a href="tel:+221330000000">+221 33 000 00 00</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; <span id="current-year"></span> AfriConnect Summit. Tous droits réservés.</p>
+                <button id="scroll-top" class="scroll-to-top" aria-label="Retourner en haut de la page">
+                    <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
