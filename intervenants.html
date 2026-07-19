@@ -6,10 +6,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header class="main-header">
+        <nav class="navbar" aria-label="Navigation principale">
+            <a class="navbar-brand" href="index.html">AfriConnect Summit</a>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Accueil</a></li>
+                <li><a class="nav-link" href="programme.html">Programme</a></li>
+                <li><a class="nav-link active" href="intervenants.html">Intervenants</a></li>
+                <li><a class="nav-link" href="contact.html">Inscription & Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Changer de thème">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button id="hamburger-menu" aria-label="Ouvrir le menu mobile" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="internal-hero">
+            <div class="internal-hero-container">
+                <h1>Nos Intervenants</h1>
+                <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                    <ol>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li aria-current="page">Intervenants</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="filter-section">
+            <div class="filter-container">
+                <p class="filter-title">Filtrer par thématique :</p>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="ia-tech">IA & Tech</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="data">Data</button>
+                </div>
+            </div>
+        </section>
+        <section class="speakers-section">
+            <div class="speakers-section-container">
+                <div class="speakers-grid">
+                    <article class="speaker-card-full fade-in-scroll" data-category="ia-tech">
+                        <div class="speaker-img-box">
+                            <img src="images/photo1.jpg" alt="Photo de Amadi Diop, Expert en Intelligence Artificielle">
+                        </div>
+                        <div class="speaker-details">
+                            <h3>Amadi Diop</h3>
+                            <span class="speaker-spec">IA & Modèles LLM Sovereigns</span>
+                            <p class="speaker-org">Centre Africain de Recherche</p>
+                            <span class="speaker-tag">Sénégal</span>
+                        </div>
+                    </article>
+                    <article class="speaker-card-full fade-in-scroll" data-category="business">
+                        <div class="speaker-img-box">
+                            <img src="images/photo2.jpg" alt="Photo de Fatou Thiam, Fondatrice FinTech">
+                        </div>
+                        <div class="speaker-details">
+                            <h3>Fatou Thiam</h3>
+                            <span class="speaker-spec">FinTech & Inclusion Financière</span>
+                            <p class="speaker-org">Bantu Capital</p>
+                            <span class="speaker-tag">Côte d'Ivoire</span>
+                        </div>
+                    </article>
+                    <article class="speaker-card-full fade-in-scroll" data-category="ia-tech">
+                        <div class="speaker-img-box">
+                            <img src="images/photo3.jpg" alt="Photo de Kwamé Mensah, Architecte Sécurité">
+                        </div>
+                        <div class="speaker-details">
+                            <h3>Kwamé Mensah</h3>
+                            <span class="speaker-spec">Cloud Architecture & CyberShield</span>
+                            <p class="speaker-org">Tech Security Labs</p>
+                            <span class="speaker-tag">Ghana</span>
+                        </div>
+                    </article>
+                    <article class="speaker-card-full fade-in-scroll" data-category="data">
+                        <div class="speaker-img-box">
+                            <img src="images/photo4.jpg" alt="Photo de Amina Bella, Spécialiste Data">
+                        </div>
+                        <div class="speaker-details">
+                            <h3>Amina Bella</h3>
+                            <span class="speaker-spec">Data Science & Big Data</span>
+                            <p class="speaker-org">Sahel Analytics</p>
+                            <span class="speaker-tag">Cameroun</span>
+                        </div>
+                    </article>
+                    <article class="speaker-card-full fade-in-scroll" data-category="design">
+                        <div class="speaker-img-box">
+                            <img src="images/photo5.jpg" alt="Photo de Tobi Adebayo, UI/UX Designer">
+                        </div>
+                        <div class="speaker-details">
+                            <h3>Tobi Adebayo</h3>
+                            <span class="speaker-spec">Product Design & UX Inclusive</span>
+                            <p class="speaker-org">Naija Design Studio</p>
+                            <span class="speaker-tag">Nigeria</span>
+                        </div>
+                    </article>
+                    <article class="speaker-card-full fade-in-scroll" data-category="data">
+                        <div class="speaker-img-box">
+                            <img src="images/photo6.jpg" alt="Photo de Hedi Mansour, Ingénieur de données">
+                        </div>
+                        <div class="speaker-details">
+                            <h3>Hedi Mansour</h3>
+                            <span class="speaker-spec">Data Engineering & Pipelines</span>
+                            <p class="speaker-org">Carthage Data Systems</p>
+                            <span class="speaker-tag">Tunisie</span>
+                        </div>
+                    </article>
+                    <article class="speaker-card-full fade-in-scroll" data-category="business">
+                        <div class="speaker-img-box">
+                            <img src="images/photo7.jpg" alt="Photo de Marie-Noëlle Kongo, Consultante Stratégie">
+                        </div>
+                        <div class="speaker-details">
+                            <h3>Marie-Noëlle Kongo</h3>
+                            <span class="speaker-spec">Stratégie Go-To-Market & Scale</span>
+                            <p class="speaker-org">Equator Ventures</p>
+                            <span class="speaker-tag">Congo</span>
+                        </div>
+                    </article>
+                    <article class="speaker-card-full fade-in-scroll" data-category="design">
+                        <div class="speaker-img-box">
+                            <img src="images/photo8.jpg" alt="Photo de Salimata Diallo, Brand Strategy Designer">
+                        </div>
+                        <div class="speaker-details">
+                            <h3>Salimata Diallo</h3>
+                            <span class="speaker-spec">Identité Visuelle & Typographie</span>
+                            <p class="speaker-org">Syli Design</p>
+                            <span class="speaker-tag">Guinée</span>
+                        </div>
+                    </article>
+                    <article class="speaker-card-full fade-in-scroll" data-category="ia-tech">
+                        <div class="speaker-img-box">
+                            <img src="images/photo9.jpg" alt="Photo de Tariq Yusuf, Chercheur en Cybersécurité">
+                        </div>
+                        <div class="speaker-details">
+                            <h3>Tariq Yusuf</h3>
+                            <span class="speaker-spec">Sécurité IoT & Cryptographie</span>
+                            <p class="speaker-org">Atlas Cyber Academy</p>
+                            <span class="speaker-tag">Maroc</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column branding">
+                <span class="footer-logo">AfriConnect Summit</span>
+                <p class="footer-desc">
+                    Le rendez-vous incontournable des innovateurs, développeurs et investisseurs pour façonner l'avenir
+                    technologique de l'Afrique.
+                </p>
+                <div class="social-links">
+                    <a href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Suivre AfriConnect sur X (Twitter)">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener"
+                        aria-label="Suivre AfriConnect sur LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener"
+                        aria-label="Voir le dépôt GitHub de l'événement">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column links">
+                <h3>Navigation</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Programme complet</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">S'inscrire au sommet</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-info">
+                <h3>Infos Pratiques</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        <span>Dakar Arena, Dakar, Sénégal</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                        <a href="mailto:contact@africonnect.com">contact@africonnect.com</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                        <a href="tel:+221330000000">+221 33 000 00 00</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; <span id="current-year"></span> AfriConnect Summit. Tous droits réservés.</p>
+                <button id="scroll-top" class="scroll-to-top" aria-label="Retourner en haut de la page">
+                    <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 
