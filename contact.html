@@ -10,6 +10,214 @@
 </head>
 
 <body>
+    <header class="main-header">
+        <nav class="navbar" aria-label="Navigation principale">
+            <a class="navbar-brand" href="index.html">AfriConnect Summit</a>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Accueil</a></li>
+                <li><a class="nav-link" href="programme.html">Programme</a></li>
+                <li><a class="nav-link" href="intervenants.html">Intervenants</a></li>
+                <li><a class="nav-link active" href="contact.html">Inscription & Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Changer de thème"><i class="bi bi-moon-fill"></i></button>
+                <button id="hamburger-menu" aria-label="Ouvrir le menu mobile" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="internal-hero">
+            <div class="internal-hero-container">
+                <h1>Rejoignez l'Aventure</h1>
+                <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                    <ol>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li aria-current="page">Contact & Inscription</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-form-column">
+                    <h2>Formulaire d'Inscription</h2>
+                    <p>Réservez votre place pour l'édition 2026. Les places sont limitées.</p>
+                    <form id="registration-form" novalidate>
+                        <div id="form-success-message" class="success-box" style="display: none;">
+                            <i class="bi bi-check-circle-fill"></i> Inscription validée avec succès ! Un e-mail de
+                            confirmation vous a été envoyé.
+                        </div>
+                        <div class="form-group">
+                            <label for="fullname">Nom Complet </label>
+                            <input type="text" id="fullname" name="fullname" required placeholder="Ex: Oumar Diaw">
+                            <span class="error-msg" id="error-fullname"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse Émail</label>
+                            <input type="email" id="email" name="email" required placeholder="Ex: contact@exemple.com">
+                            <span class="error-msg" id="error-email"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Numéro de Téléphone </label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Ex: +221 77 000 00 00">
+                            <span class="error-msg" id="error-phone"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="ticket-type">Type de Participation</label>
+                            <select id="ticket-type" name="ticket-type" required>
+                                <option value="" disabled selected>Choisir une option...</option>
+                                <option value="standard">Pass Standard (Accès conférences)</option>
+                                <option value="premium">Pass Premium (Ateliers + Networking)</option>
+                                <option value="student">Pass Étudiant (Tarif réduit)</option>
+                            </select>
+                            <span class="error-msg" id="error-ticket"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Pays Africain Représenté</label>
+                            <select id="country" name="country" required>
+                                <option value="" disabled selected>Sélectionnez votre pays...</option>
+                                <option value="SN">Sénégal</option>
+                                <option value="CI">Côte d'Ivoire</option>
+                                <option value="GH">Ghana</option>
+                                <option value="CM">Cameroun</option>
+                                <option value="MA">Maroc</option>
+                                <option value="TN">Tunisie</option>
+                                <option value="GN">Guinée</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="CG">Congo</option>
+                                <option value="BF">Burkina Faso</option>
+                            </select>
+                            <span class="error-msg" id="error-country"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="motivation">Lettre de motivation / Message (Min. 20 caractères)</label>
+                            <textarea id="motivation" name="motivation" rows="5" required
+                                placeholder="Expliquez en quelques mots vos attentes pour ce sommet..."></textarea>
+                            <span class="error-msg" id="error-motivation"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Confirmer mon inscription</button>
+                    </form>
+                </div>
+                <div class="contact-info-column">
+                    <h2>Informations Utiles</h2>
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <input type="checkbox" id="faq-1" class="faq-toggle">
+                            <label for="faq-1" class="faq-title">Où et quand se déroule le sommet ?</label>
+                            <div class="faq-content">
+                                <p>L'événement se tiendra du 15 au 17 octobre 2026 à la Dakar Arena au Sénégal.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <input type="checkbox" id="faq-2" class="faq-toggle">
+                            <label for="faq-2" class="faq-title">Le pass étudiant nécessite-t-il un justificatif
+                                ?</label>
+                            <div class="faq-content">
+                                <p>Oui, une carte d'étudiant valide ou un certificat de scolarité de l'année en cours
+                                    sera demandé à l'entrée.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <input type="checkbox" id="faq-3" class="faq-toggle">
+                            <label for="faq-3" class="faq-title">Les ateliers pratiques sont-ils inclus dans le pass
+                                standard ?</label>
+                            <div class="faq-content">
+                                <p>Non, l'accès aux laboratoires techniques et aux ateliers nécessite un Pass Premium ou
+                                    Étudiant.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <input type="checkbox" id="faq-4" class="faq-toggle">
+                            <label for="faq-4" class="faq-title">Peut-on suivre l'événement en ligne ?</label>
+                            <div class="faq-content">
+                                <p>L'édition 2026 se déroule exclusivement en présentiel pour favoriser les opportunités
+                                    de réseautage.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <input type="checkbox" id="faq-5" class="faq-toggle">
+                            <label for="faq-5" class="faq-title">Comment obtenir ma facture ou attestation ?</label>
+                            <div class="faq-content">
+                                <p>Elle vous sera automatiquement transmise par e-mail immédiatement après la validation
+                                    de votre formulaire.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-wrapper">
+                        <h3>Localisation du site</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.941913075276!2d-17.227264823932402!3d14.715978974347783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1938fae5c3e55%3A0x7770bc143ea312b9!2sDakar%20Arena!5e0!3m2!1sfr!2ssn!4v1710000000000!5m2!1sfr!2ssn"
+                            width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column branding">
+                <span class="footer-logo">AfriConnect Summit</span>
+                <p class="footer-desc">
+                    Le rendez-vous incontournable des innovateurs, développeurs et investisseurs pour façonner l'avenir
+                    technologique de l'Afrique.
+                </p>
+                <div class="social-links">
+                    <a href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Suivre AfriConnect sur X (Twitter)">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener"
+                        aria-label="Suivre AfriConnect sur LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener"
+                        aria-label="Voir le dépôt GitHub de l'événement">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column links">
+                <h3>Navigation</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Programme complet</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">S'inscrire au sommet</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-info">
+                <h3>Infos Pratiques</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        <span>Dakar Arena, Dakar, Sénégal</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                        <a href="mailto:contact@africonnect.com">contact@africonnect.com</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                        <a href="tel:+221330000000">+221 33 000 00 00</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; <span id="current-year"></span> AfriConnect Summit. Tous droits réservés.</p>
+                <button id="scroll-top" class="scroll-to-top" aria-label="Retourner en haut de la page">
+                    <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 
