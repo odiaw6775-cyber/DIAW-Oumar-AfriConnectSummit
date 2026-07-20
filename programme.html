@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programme | AfriConnect Summit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Navbar -->
     <header class="main-header">
         <nav class="navbar" aria-label="Navigation principale">
             <a href="index.html" class="navbar-brand">AfriConnect Summit</a>
@@ -32,7 +36,6 @@
         <section class="internal-hero">
             <div class="internal-hero-container">
                 <h1>Programme des Sessions</h1>
-                <!-- Fil d'Ariane -->
                 <nav class="breadcrumb" aria-label="Fil d'Ariane">
                     <ol>
                         <li><a href="index.html">Accueil</a></li>
@@ -41,16 +44,15 @@
                 </nav>
             </div>
         </section>
-        <!-- Onglets et Planning -->
+
         <section class="schedule-section">
             <div class="schedule-container">
-                <!-- Barre d'onglets -->
                 <div class="tab-container">
                     <button class="tab-btn active" data-day="day1">Jour 1 — 29 Octobre</button>
                     <button class="tab-btn" data-day="day2">Jour 2 — 30 Octobre</button>
                     <button class="tab-btn" data-day="day3">Jour 3 — 31 Octobre</button>
                 </div>
-                <!-- Contenu des Plannings -->
+
                 <div class="tab-content-wrapper">
                     <div id="day1" class="tab-pane active">
                         <table class="schedule-table">
@@ -65,39 +67,44 @@
                             <tbody>
                                 <tr>
                                     <td>08h30 - 09h30</td>
-                                    <td class="session-title">Accueil des participants & Enregistrement</td>
+                                    <td class="session-title">Accueil & Petit-déjeuner networking</td>
                                     <td>—</td>
                                     <td>Hall Principal</td>
                                 </tr>
                                 <tr>
                                     <td>09h30 - 11h00</td>
-                                    <td class="session-title">Keynote d'ouverture : L'Afrique numérique en 2026</td>
+                                    <td class="session-title">Keynote : L'Afrique numérique en 2026</td>
                                     <td>Amadi Diop</td>
                                     <td>Amphi Panafricain</td>
                                 </tr>
                                 <tr>
                                     <td>11h15 - 12h45</td>
-                                    <td class="session-title">Table ronde : Souveraineté des données et Cloud sur le
-                                        continent</td>
+                                    <td class="session-title">Table ronde : Souveraineté des données</td>
                                     <td>Kwamé Mensah</td>
                                     <td>Salle Innovation</td>
                                 </tr>
                                 <tr>
                                     <td>14h00 - 15h30</td>
-                                    <td class="session-title">Atelier : Sécuriser les applications web natives</td>
+                                    <td class="session-title">Atelier : Sécuriser les applications web</td>
                                     <td>Équipe CyberShield</td>
                                     <td>Lab Tech 1</td>
                                 </tr>
                                 <tr>
                                     <td>15h45 - 17h15</td>
-                                    <td class="session-title">Conférence : Le Web3 au service de l'inclusion
-                                        financière</td>
+                                    <td class="session-title">Web3 et inclusion financière</td>
                                     <td>Fatou Thiam</td>
                                     <td>Amphi Panafricain</td>
+                                </tr>
+                                <tr>
+                                    <td>17h30 - 19h00</td>
+                                    <td class="session-title">Cocktail de bienvenue</td>
+                                    <td>—</td>
+                                    <td>Espace VIP</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+
                     <div id="day2" class="tab-pane">
                         <table class="schedule-table">
                             <thead>
@@ -110,40 +117,45 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>08h30 - 09h30</td>
-                                    <td class="session-title">Accueil des participants & Enregistrement</td>
-                                    <td>—</td>
-                                    <td>Hall Principal</td>
-                                </tr>
-                                <tr>
-                                    <td>09h30 - 11h00</td>
-                                    <td class="session-title">Keynote d'ouverture : L'Afrique numérique en 2026</td>
-                                    <td>Oumar Diaw</td>
+                                    <td>09h00 - 10h30</td>
+                                    <td class="session-title">IA générative : Applications en Afrique</td>
+                                    <td>Amadi Diop</td>
                                     <td>Amphi Panafricain</td>
                                 </tr>
                                 <tr>
-                                    <td>11h15 - 12h45</td>
-                                    <td class="session-title">Table ronde : Souveraineté des données et Cloud sur le
-                                        continent</td>
-                                    <td>Fatou Thiam</td>
+                                    <td>10h45 - 12h15</td>
+                                    <td class="session-title">Cloud computing et infrastructures</td>
+                                    <td>Kwamé Mensah</td>
                                     <td>Salle Innovation</td>
                                 </tr>
                                 <tr>
+                                    <td>12h15 - 14h00</td>
+                                    <td class="session-title">Déjeuner & Networking</td>
+                                    <td>—</td>
+                                    <td>Espace Restauration</td>
+                                </tr>
+                                <tr>
                                     <td>14h00 - 15h30</td>
-                                    <td class="session-title">Atelier : Sécuriser les applications web natives</td>
-                                    <td>Équipe CyberShield</td>
-                                    <td>Lab Tech 1</td>
+                                    <td class="session-title">FinTech : Révolution des paiements</td>
+                                    <td>Fatou Thiam</td>
+                                    <td>Amphi Panafricain</td>
                                 </tr>
                                 <tr>
                                     <td>15h45 - 17h15</td>
-                                    <td class="session-title">Conférence : Le Web3 au service de l'inclusion
-                                        financière</td>
-                                    <td>Kwamé Mensah</td>
+                                    <td class="session-title">Design centré utilisateur en Afrique</td>
+                                    <td>Tobi Adebayo</td>
+                                    <td>Lab Design</td>
+                                </tr>
+                                <tr>
+                                    <td>17h30 - 19h00</td>
+                                    <td class="session-title">Pitch des start-ups</td>
+                                    <td>Jury d'investisseurs</td>
                                     <td>Amphi Panafricain</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+
                     <div id="day3" class="tab-pane">
                         <table class="schedule-table">
                             <thead>
@@ -156,35 +168,39 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>08h30 - 09h30</td>
-                                    <td class="session-title">Accueil des participants & Enregistrement</td>
-                                    <td>—</td>
-                                    <td>Hall Principal</td>
-                                </tr>
-                                <tr>
-                                    <td>09h30 - 11h00</td>
-                                    <td class="session-title">Keynote d'ouverture : L'Afrique numérique en 2026</td>
-                                    <td>Oumar Diaw</td>
+                                    <td>09h00 - 10h30</td>
+                                    <td class="session-title">Data Science et décision stratégique</td>
+                                    <td>Amina Bella</td>
                                     <td>Amphi Panafricain</td>
                                 </tr>
                                 <tr>
-                                    <td>11h15 - 12h45</td>
-                                    <td class="session-title">Table ronde : Souveraineté des données et Cloud sur le
-                                        continent</td>
-                                    <td>Fatou Thiam</td>
+                                    <td>10h45 - 12h15</td>
+                                    <td class="session-title">Cybersécurité : Menaces et solutions</td>
+                                    <td>Tariq Yusuf</td>
                                     <td>Salle Innovation</td>
                                 </tr>
                                 <tr>
+                                    <td>12h15 - 14h00</td>
+                                    <td class="session-title">Déjeuner & Networking</td>
+                                    <td>—</td>
+                                    <td>Espace Restauration</td>
+                                </tr>
+                                <tr>
                                     <td>14h00 - 15h30</td>
-                                    <td class="session-title">Atelier : Sécuriser les applications web natives</td>
-                                    <td>Équipe CyberShield</td>
-                                    <td>Lab Tech 1</td>
+                                    <td class="session-title">Expérience utilisateur inclusive</td>
+                                    <td>Salimata Diallo</td>
+                                    <td>Lab Design</td>
                                 </tr>
                                 <tr>
                                     <td>15h45 - 17h15</td>
-                                    <td class="session-title">Conférence : Le Web3 au service de l'inclusion
-                                        financière</td>
-                                    <td>Kwamé Mensah</td>
+                                    <td class="session-title">Future of Work : Talents africains</td>
+                                    <td>Marie-Noëlle Kongo</td>
+                                    <td>Amphi Panafricain</td>
+                                </tr>
+                                <tr>
+                                    <td>17h30 - 19h00</td>
+                                    <td class="session-title">Clôture & Remise des prix</td>
+                                    <td>Amadi Diop</td>
                                     <td>Amphi Panafricain</td>
                                 </tr>
                             </tbody>
@@ -193,7 +209,7 @@
                 </div>
             </div>
         </section>
-        <!-- Section Thématique -->
+
         <section class="themes-section">
             <div class="themes-container">
                 <div class="section-header">
@@ -225,7 +241,7 @@
             </div>
         </section>
     </main>
-    <!-- Footer -->
+
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-column branding">
@@ -258,7 +274,6 @@
                     <li><a href="contact.html">S'inscrire au sommet</a></li>
                 </ul>
             </div>
-
             <div class="footer-column contact-info">
                 <h3>Infos Pratiques</h3>
                 <ul class="contact-list">
@@ -276,7 +291,6 @@
                     </li>
                 </ul>
             </div>
-
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom-container">
